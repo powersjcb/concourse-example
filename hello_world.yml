@@ -1,0 +1,15 @@
+---
+
+platform: linux  # specifies pool of worker instances to use
+
+image_resource:
+  type: docker-image
+  source:
+    repository: centos
+    tag: 7
+
+run:
+  path: echo
+  args: [hello world]
+
+
